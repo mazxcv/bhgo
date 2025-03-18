@@ -1,4 +1,4 @@
-package main
+package ch2
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 // It is a basic example of how to use the net and sync packages
 // to concurrently scan TCP ports.
 // The function takes no arguments and returns nothing.
-func main() {
+func AsyncTCPScan() {
 
 	var wg sync.WaitGroup
 	for port := 1; port <= 1024; port++ {
